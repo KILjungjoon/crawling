@@ -1,2 +1,3 @@
 # crawling
- Code for importing music information from a music chart site
+Code for importing K-POP music information from a korean music chart site MELON
+MELON is here https://www.melon.com/index.htm
