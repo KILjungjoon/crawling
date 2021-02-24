@@ -1,18 +1,8 @@
-#!/usr/bin/env python
-# coding: utf-8
-
-# In[1]:
-
-
 import re
 import requests
 from bs4 import BeautifulSoup
 from time import sleep
 import os
-
-
-# In[10]:
-
 
 # 2020 year chart(2020년 시대별 차트)
 # https://www.melon.com/chart/age/list.htm?idx=1&chartType=YE&chartGenre=POP&chartDate=2020&moved=Y
@@ -50,10 +40,3 @@ for i, tag in enumerate(soup.select('a[href*=playSong]'),1):
         song_Id = matched.group(1)
         song_url = 'https://www.melon.com/song/detail.htm?songId=' + song_Id
         print(i,title, song_url)
-
-
-# In[ ]:
-
-
-
-
